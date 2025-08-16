@@ -6,12 +6,10 @@ countries = pd.read_csv('countries.csv')
 genres = pd.read_csv('genres.csv')
 langs = pd.read_csv('langs.csv')
 movie = pd.read_csv('movie_details.csv')
-prod_countries = pd.read_csv('prod_countries.csv')
 
 # Merge dataframes
-merged_df = pd.merge(prod_countries, companies, on="movie_id")
+merged_df = pd.merge(genres, companies, on="movie_id")
 merged_df = pd.merge(merged_df, countries, on="movie_id")
-merged_df = pd.merge(merged_df, genres, on="movie_id")
 merged_df = pd.merge(merged_df, langs, on="movie_id")
 merged_df = pd.merge(merged_df, movie, on="movie_id")
 

@@ -1,4 +1,4 @@
-movie_id,company_name,country
+movie_id,company_name,company_country
 1184918,DreamWorks Animation,US
 1035048,Lyrical Media,US
 1035048,Fuller Media,US
@@ -19508,7 +19508,7 @@ movie_id,company_name,country
 775996,Inspire Entertainment,US
 775996,Automatik Entertainment,US
 775996,Leeding Media,
-575361,10/09,
+575361,9-Oct,
 2469,El Deseo,ES
 593,Unit Four,
 593,Creative Unit of Writers & Cinema Workers,
