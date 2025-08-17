@@ -25,11 +25,11 @@ def file_ready():
     merged_df = merged_df.drop(columns=["homepage"])
     merged_df = merged_df.drop(columns=["backdrop_path"])
     merged_df = merged_df.drop(columns=["poster_path"])
+    merged_df = merged_df.drop(columns=["tagline"])
     merged_df = merged_df.dropna(subset=["company_country"])
     merged_df = merged_df.dropna(subset=["imdb_id"])
     merged_df = merged_df.dropna(subset=["overview"])
     merged_df = merged_df.dropna(subset=["release_date"])
-    merged_df = merged_df.dropna(subset=["tagline"])
 
     # Save merged dataframe to CSV
     merged_df.to_csv('merged_movie_data.csv', index=False)
